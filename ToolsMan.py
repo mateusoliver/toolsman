@@ -1,6 +1,6 @@
 import subprocess as sp
 
-ip = "10.10.10.175"
+ip = input('Entre com o ip do alvo: ')
 status,result = sp.getstatusoutput("ping -c1 -w2 " + ip)
 
 if status == 0:
