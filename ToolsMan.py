@@ -12,7 +12,6 @@ if system() == "Windows":
 
 else:
     status, result = sp.getstatusoutput("ping -c1 -w2 " + ip + " >> /dev/null")
-    #status, result = sp.getstatusoutput("ping -c1 -w2 " + ip)
 
 if status == 0:
     print("-"*60)
